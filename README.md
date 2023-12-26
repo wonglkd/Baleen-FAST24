@@ -1,4 +1,6 @@
-# Artifact for Baleen: ML Admission & Prefetching for Flash Caches (FAST 2024)
+# Artifact for Baleen (FAST 2024)
+
+Paper: [Baleen: ML Admission & Prefetching for Flash Caches](https://www.usenix.org/conference/fast24/presentation/wong)
 
 This repository is targeted at those seeking to reproduce the results found in the Baleen paper and contains a frozen copy of the code.
 If you are looking to use Baleen, please go to https://github.com/wonglkd/BCacheSim/ for the latest version.
