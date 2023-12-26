@@ -1,11 +1,11 @@
 # Artifact for Baleen (FAST 2024)
 
-Paper: [Baleen: ML Admission & Prefetching for Flash Caches](https://www.usenix.org/conference/fast24/presentation/wong)
+_Paper: [Baleen: ML Admission & Prefetching for Flash Caches](https://wonglkd.fi-de.net/papers/Baleen-FAST24.pdf)_
 
 This repository is targeted at those seeking to reproduce the results found in the Baleen paper and contains a frozen copy of the code.
 If you are looking to use Baleen, please go to https://github.com/wonglkd/BCacheSim/ for the latest version.
 
-This repository contains Python code to reproduce the simulator results in the Baleen paper. The testbed code modified a proprietary internal version of CacheLib and will not be released at this time, pending rebasing on the open-source version of CacheLib.
+**Scope:** this repository contains Python code to reproduce the **simulator** results in the Baleen paper. The testbed code modified a proprietary internal version of CacheLib and will not be released at this time, pending a rebase on the open-source version of CacheLib. Another key difference is that Meta's exact constants for the disk head time function will not be released, meaning that results will not be exactly the same; instead, we use constants (seek time and bandwidth) measured on the hard disks in our university testbed.
 
 ## Getting Started
 
