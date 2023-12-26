@@ -35,7 +35,7 @@ conda env create -f BCacheSim/install/env_cachelib-py-3.11.yaml
 conda env create -f BCacheSim/install/env_cachelib-pypy-3.8.yaml
 ```
 
-3. Download trace files
+3. Download trace files (see [here](https://ftp.pdl.cmu.edu/pub/datasets/Baleen24/) for more details on the traces)
 
 ```
 cd data
