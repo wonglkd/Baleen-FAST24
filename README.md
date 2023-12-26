@@ -22,7 +22,9 @@ Alternatively, you may do a manual install:
 1. Clone the repository (if not already done)
 
 ```
-git clone git@github.com:wonglkd/Baleen-FAST24.git
+git clone --recurse-submodules git@github.com:wonglkd/Baleen-FAST24.git
+git submodule init
+git submodule update
 cd Baleen-FAST24
 ```
 
