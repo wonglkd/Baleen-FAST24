@@ -2,7 +2,7 @@
   "trace": "data/tectonic/201910/Region1/full_0_0.1.trace",
   "learned_ap_model_path": "tmp/example/201910_Region1_0_0.1/ea_5892.86_wr_35.599_admit_threshold_binary.model",
   "prefetcher_model_path": "tmp/example/201910_Region1_0_0.1/ea_5892.86_wr_35.599_prefetch_{k}.model",
-  "output_dir": "runs/example/prefetch_ml-on-partial-hit",
+  "output_dir": "runs/example/baleen/prefetch_ml-on-partial-hit",
   "ep_analysis": "runs/example/baleen/example/201910_Region1_0_0.1/offline_analysis_ea_5892.86.csv",
   "ram_cache": false,
   "ram_cache_size_gb": 10.0,

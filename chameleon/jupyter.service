@@ -1,0 +1,13 @@
+[Unit]
+Description=Jupyter Notebook server
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/env python -m jupyterlab -y --no-browser --NotebookApp.token=''
+WorkingDirectory=/home/cc
+User=cc
+Group=cc
+Restart=on-failure
+RestartSec=5s
+[Install]
+WantedBy=multi-user.target

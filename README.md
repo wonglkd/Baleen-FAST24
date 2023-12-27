@@ -24,11 +24,12 @@ _Time estimate: 30 minutes (10 mins interactive)._
 The recommended way is to use Chameleon Trovi, an academic cloud. 
 
 1. Launch [artifact on Trovi](https://www.chameleoncloud.org/experiment/share/aa6fb454-6452-4fc8-994a-b028bfc3c82d)
-2. Run supplied notebook, which will provision a beefier node (reserved for up to 7 days) that you can create a SSH tunnel to.
+2. Open notebook `chameleon/1-getting-started.ipynb` which will walk you through the Getting Started section of this README. You may run one cell at a time, or click Run -> Run All Cells to execute all commands. If processes get killed, you need a dedicated server.
+3. (Recommended) The shared JupyterHub has limited RAM/disk. Run notebook `chameleon/2-start-dedicated-server.ipynb`, which provisions a beefier node (for 7 days) that you can create a SSH tunnel to.
 
 ### Installation (local computer)
 
-Alternatively, you may do a manual install:
+Alternatively, you may do a manual install. These commands are also available in [getting-started.sh](getting-started.sh) for your convenience.
 
 1. Clone the repository (if not already done)
 
@@ -39,13 +40,20 @@ cd Baleen-FAST24
 
 Note: this repository uses submodules. As a reminder, when you pull, you'll likely want to use `git pull --recurse-submodules`.
 
-2. Install Python dependencies with Conda or pip.
+2. Install Python dependencies with Conda (recommended) or pip.
 
 ```
 conda env create -f BCacheSim/install/env_cachelib-py-3.11.yaml
-conda env create -f BCacheSim/install/env_cachelib-pypy-3.8.yaml
+conda activate --name cachelib-py-3.11
+# PyPy is optional (for faster non-ML runs)
+# conda env create -f BCacheSim/install/env_cachelib-pypy-3.8.yaml
 ```
 
+Alternatively, use pip:
+
+```
+python3 -m pip install --user -r BCacheSim/install/requirements.txt
+```
 
 3. Download trace files (see [here](https://ftp.pdl.cmu.edu/pub/datasets/Baleen24/) for more details on the traces)
 
@@ -71,7 +79,7 @@ _Time estimate: 30 minutes (10 mins interactive)._
 ./BCacheSim/run_py.sh py -B -m BCacheSim.cachesim.simulate_ap --config runs/example/baleen/prefetch_ml-on-partial-hit/config.json
 ```
 
-3. Use `notebooks/example.ipynb` to view and plot results.
+3. Use [notebooks/example/example.ipynb](notebooks/example/example.ipynb) to view and plot results.
 
 
 ## Detailed Instructions
@@ -79,14 +87,17 @@ _Time estimate: 30 minutes (10 mins interactive)._
 This section assumes you have completed the 'Getting Started' section and have
 installed the code and downloaded the traces.
 
-As it requires too much computation time to reproduce the experiments in full,
+As it requires too much computation time to rerun every single experiment,
 we suggest the following steps to maximize the use of reviewers' time in evaluating
 our paper. We supply our traces, code, and the intermediate results from our experimental runs.
-Roadmap for evaluation:
 
-1. Test out Baleen's ML training & simulator (in Getting Started)
-2. Select additional simulations to run if desired
-3. Plot graphs using our intermediate results
+**Roadmap for evaluation:**
+
+1. Test out Baleen's ML training & simulator (in Getting Started).
+    - What: simulate RejectX baseline, train Baleen models, simulate Baleen
+    - Expected results: notebooks/example/example.ipynb
+2. Plot graphs using our intermediate results.
+3. Select additional simulations to run if desired.
 
 
 ## Directory structure
