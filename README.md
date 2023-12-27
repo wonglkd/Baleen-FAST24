@@ -19,9 +19,11 @@ _Time estimate: 60 mins (20 mins interactive)._
 
 ### Installation (Chameleon Trovi)
 
-The recommended way is to use Chameleon Trovi, an academic cloud. Time estimate: 30 minutes (5 mins interactive).
+_Time estimate: 30 minutes (10 mins interactive)._
 
-1. Launch artifact on Trovi [Link]
+The recommended way is to use Chameleon Trovi, an academic cloud. 
+
+1. Launch [artifact on Trovi](https://www.chameleoncloud.org/experiment/share/aa6fb454-6452-4fc8-994a-b028bfc3c82d)
 2. Run supplied notebook, which will provision a beefier node (reserved for up to 7 days) that you can create a SSH tunnel to.
 
 ### Installation (local computer)
@@ -35,12 +37,15 @@ git clone --recurse-submodules https://github.com/wonglkd/Baleen-FAST24.git
 cd Baleen-FAST24
 ```
 
+Note: this repository uses submodules. As a reminder, when you pull, you'll likely want to use `git pull --recurse-submodules`.
+
 2. Install Python dependencies with Conda or pip.
 
 ```
 conda env create -f BCacheSim/install/env_cachelib-py-3.11.yaml
 conda env create -f BCacheSim/install/env_cachelib-pypy-3.8.yaml
 ```
+
 
 3. Download trace files (see [here](https://ftp.pdl.cmu.edu/pub/datasets/Baleen24/) for more details on the traces)
 
@@ -50,6 +55,8 @@ bash get-tectonic.sh
 ```
 
 ### Do a simple experiment
+
+_Time estimate: 30 minutes (10 mins interactive)._
 
 1. Manually run the simulator with the baseline RejectX. (4 mins)
 
