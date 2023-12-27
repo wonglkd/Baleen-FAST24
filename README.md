@@ -76,18 +76,17 @@ _Time estimate: 30 minutes (10 mins interactive)._
 
 ## Detailed Instructions
 
-_Time estimate: XX mins._
-
-_Time estimate (interactive): XX mins._
-
 This section assumes you have completed the 'Getting Started' section and have
 installed the code and downloaded the traces.
 
+As it requires too much computation time to reproduce the experiments in full,
+we suggest the following steps to maximize the use of reviewers' time in evaluating
+our paper. We supply our traces, code, and the intermediate results from our experimental runs.
 Roadmap for evaluation:
-- Run Baleen
-- Test
 
-Jupyter notebooks:
+1. Test out Baleen's ML training & simulator (in Getting Started)
+2. Select additional simulations to run if desired
+3. Plot graphs using our intermediate results
 
 
 ## Directory structure
@@ -101,6 +100,10 @@ Jupyter notebooks:
 
 ## Additional notes
 
-Time required to re-run all simulator runs: 624 machine-days
-7 traces
-10 samples
+624 machine-days were used for the final runs to generate the results used in the paper.
+Each simulation of a ML policy takes at least 30 minutes, multiplied by 7 traces and 10 samples each.
+
+
+## Any questions?
+
+Feel free to contact me: https://wonglkd.fi-de.net
