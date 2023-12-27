@@ -1,4 +1,8 @@
 # Ignore everything in this directory
 *
+# Jupyter Notebook
+.ipynb_checkpoints
 # Except this file
 !.gitignore
+!config.json
+!*/
