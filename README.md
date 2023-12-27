@@ -19,7 +19,7 @@ _Time estimate: 60 mins (20 mins interactive)._
 
 ### Installation (Chameleon Trovi)
 
-The recommended way is to use Chameleon Trovi, an academic cloud. Time estimate: 30 minutes (mostly waiting time).
+The recommended way is to use Chameleon Trovi, an academic cloud. Time estimate: 30 minutes (5 mins interactive).
 
 1. Launch artifact on Trovi [Link]
 2. Run supplied notebook, which will provision a beefier node (reserved for up to 7 days) that you can create a SSH tunnel to.
