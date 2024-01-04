@@ -97,6 +97,7 @@ our paper. We supply our traces, code, and the intermediate results from our exp
     - What: simulate RejectX baseline, train Baleen models, simulate Baleen
     - Expected results: notebooks/example/example.ipynb
 2. Plot graphs using our intermediate results.
+    - Example: notebooks/paper-figs/fig-01bc,17-202309.ipynb
 3. Select additional simulations to run if desired.
 
 
