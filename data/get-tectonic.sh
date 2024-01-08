@@ -5,6 +5,12 @@ if [ ! -d tectonic ]; then
     tar xvf storage_0.1.tar.gz
     mv storage tectonic
 fi
-if [ ! -d results_release.csv.gz ]; then
+if [ ! -f results_release.csv.gz ]; then
     wget https://ftp.pdl.cmu.edu/pub/datasets/Baleen24/results_release.csv.gz
+fi
+if [ ! -f breakdowns.tar.gz ]; then
+    wget https://ftp.pdl.cmu.edu/pub/datasets/Baleen24/breakdowns.csv.gz
+fi
+if [ ! -d breakdowns-stats/ ]; then
+    tar xvf breakdowns.tar.gz
 fi
