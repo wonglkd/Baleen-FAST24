@@ -9,8 +9,8 @@ if [ ! -f results_release.csv.gz ]; then
     wget https://ftp.pdl.cmu.edu/pub/datasets/Baleen24/results_release.csv.gz
 fi
 if [ ! -f breakdowns.tar.gz ]; then
-    wget https://ftp.pdl.cmu.edu/pub/datasets/Baleen24/breakdowns.csv.gz
+    wget https://ftp.pdl.cmu.edu/pub/datasets/Baleen24/breakdowns.tar.gz
 fi
-if [ ! -d breakdowns-stats/ ]; then
+if [ ! -d breakdown-stats/ ]; then
     tar xvf breakdowns.tar.gz
 fi
