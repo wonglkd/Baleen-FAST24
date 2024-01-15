@@ -13,6 +13,8 @@ Some terms were renamed after coding for better clarity in the paper. However, t
 - Service Time (in the code) was renamed to Disk Head Time (in the paper)
 - Chunks (in the code) are called segments (in the paper)
 
+We have verified that our instructions work on Chameleon, and have recorded a video showing the setup of the environment and the reproduction of the instructions below (YouTube link TBC).
+
 ## Getting Started
 
 _Time estimate: 60 mins (20 mins interactive)._
@@ -21,10 +23,10 @@ _Time estimate: 60 mins (20 mins interactive)._
 
 _Time estimate: 30 minutes (10 mins interactive)._
 
-The recommended way is to use Chameleon Trovi, an academic cloud. 
+The recommended way is to use Chameleon Trovi, an academic cloud. Note that you will require an allocation; if you are affilated with FAST, you can request to be added to the associated project (CHI-231080). To do this (and for any other issues with Chameleon), please contact the helpdesk at help@chameleoncloud.org.
 
 1. Launch [artifact on Trovi](https://www.chameleoncloud.org/experiment/share/aa6fb454-6452-4fc8-994a-b028bfc3c82d)
-2. Open notebook `chameleon/1-getting-started.ipynb` which will walk you through the Getting Started section of this README. You may run one cell at a time, or click Run -> Run All Cells to execute all commands. If processes get killed, you need a dedicated server.
+2. (Optional) Open notebook `chameleon/1-getting-started.ipynb` which will walk you through the Getting Started section of this README. You may run one cell at a time, or click Run -> Run All Cells to execute all commands. If processes get killed, you need a dedicated server.
 3. (Recommended) The shared JupyterHub has limited RAM/disk. Run notebook `chameleon/2-start-dedicated-server.ipynb`, which provisions a beefier node (for 7 days) that you can create a SSH tunnel to.
 
 ### Installation (local computer)
@@ -115,6 +117,26 @@ our paper. We supply our traces, code, and the intermediate results from our exp
 624 machine-days were used for the final runs to generate the results used in the paper.
 Each simulation of a ML policy takes at least 30 minutes, multiplied by 7 traces and 10 samples each.
 
+
+## Troubleshooting
+
+If you face any issues, please try the following things:
+
+1. Making sure you have the latest version of the repository
+
+```
+git pull --recurse-submodules
+```
+
+2. Making sure you have the latest copy of the data.
+
+```
+cd data
+rm -r breakdown-stats/
+rm results_release.csv.gz
+rm -r tectonic
+bash get-tectonic.sh
+```
 
 ## Any questions?
 
