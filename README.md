@@ -13,7 +13,10 @@ Some terms were renamed after coding for better clarity in the paper. However, t
 - Service Time (in the code) was renamed to Disk Head Time (in the paper)
 - Chunks (in the code) are called segments (in the paper)
 
-We have verified that our instructions work on Chameleon, and have recorded a video showing the setup of the environment and the reproduction of the instructions below (YouTube: http://tiny.cc/BaleenArtifactYT). This video shows that all notebooks successfully run with no error cells.
+## Walkthrough Video
+We have verified that our instructions work on Chameleon, and have recorded a video showing the setup of the environment and the reproduction of the instructions below (YouTube: http://tiny.cc/BaleenArtifactYT). This video shows the setup on Chameleon, the running of the instructions below and the running of all notebooks successfully run with no error cells.
+
+[![Baleen Artifact Walkthrough (FAST 2024)](https://github.com/wonglkd/Baleen-FAST24/assets/2821951/4b1f348b-35fc-4262-a69f-a754c0ec99b9)](https://www.tiny.cc/BaleenArtifactYT)
 
 ## Getting Started
 
