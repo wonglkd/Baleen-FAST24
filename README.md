@@ -13,7 +13,7 @@ Some terms were renamed after coding for better clarity in the paper. However, t
 - Service Time (in the code) was renamed to Disk Head Time (in the paper)
 - Chunks (in the code) are called segments (in the paper)
 
-We have verified that our instructions work on Chameleon, and have recorded a video showing the setup of the environment and the reproduction of the instructions below (YouTube link TBC).
+We have verified that our instructions work on Chameleon, and have recorded a video showing the setup of the environment and the reproduction of the instructions below (YouTube: http://tiny.cc/BaleenArtifactYT). This video shows that all notebooks successfully run with no error cells.
 
 ## Getting Started
 
