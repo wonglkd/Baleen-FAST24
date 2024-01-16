@@ -1,6 +1,8 @@
 # Artifact for Baleen (FAST 2024)
 
-_Paper: [Baleen: ML Admission & Prefetching for Flash Caches](https://wonglkd.fi-de.net/papers/Baleen-FAST24.pdf)_
+_Baleen: ML Admission & Prefetching for Flash Caches_
+
+_[Paper](https://wonglkd.fi-de.net/papers/Baleen-FAST24.pdf) | [Data](https://ftp.pdl.cmu.edu/pub/datasets/Baleen24/) | [Video walkthrough](https://www.tiny.cc/BaleenArtifactYT) | [Reproduce on Chameleon](https://www.chameleoncloud.org/experiment/share/aa6fb454-6452-4fc8-994a-b028bfc3c82d)_
 
 This repository is targeted at those seeking to reproduce the results found in the Baleen paper and contains a frozen copy of the code.
 If you are looking to use Baleen, please go to https://github.com/wonglkd/BCacheSim/ for the latest version.
@@ -13,7 +15,10 @@ Some terms were renamed after coding for better clarity in the paper. However, t
 - Service Time (in the code) was renamed to Disk Head Time (in the paper)
 - Chunks (in the code) are called segments (in the paper)
 
-We have verified that our instructions work on Chameleon, and have recorded a video showing the setup of the environment and the reproduction of the instructions below (YouTube: http://tiny.cc/BaleenArtifactYT). This video shows that all notebooks successfully run with no error cells.
+## Walkthrough Video
+We have verified that our instructions work on Chameleon, and have recorded a video showing the setup of the environment and the reproduction of the instructions below (YouTube: http://tiny.cc/BaleenArtifactYT). This video shows the setup on Chameleon, the running of the instructions below and the running of all notebooks successfully run with no error cells.
+
+[![Baleen Artifact Walkthrough (FAST 2024)](https://github.com/wonglkd/Baleen-FAST24/assets/2821951/4b1f348b-35fc-4262-a69f-a754c0ec99b9)](https://www.tiny.cc/BaleenArtifactYT)
 
 ## Getting Started
 
@@ -143,3 +148,9 @@ bash get-tectonic.sh
 ## Any questions?
 
 Feel free to contact me: https://wonglkd.fi-de.net
+
+## Reference
+
+**[Baleen: ML Admission & Prefetching for Flash Caches](https://www.usenix.org/conference/fast24/presentation/wong)**<br>
+Daniel Lin-Kit Wong, Hao Wu, Carson Molder, Sathya Gunasekar, Jimmy Lu, Snehal Khandkar, Abhinav Sharma, Daniel S. Berger, Nathan Beckmann, Gregory R. Ganger<br>
+USENIX FAST 2024
