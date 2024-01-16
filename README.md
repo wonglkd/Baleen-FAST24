@@ -101,6 +101,7 @@ our paper. We supply our traces, code, and the intermediate results from our exp
 2. Plot graphs using our intermediate results.
     - Example: notebooks/paper-figs/fig-01bc,17-202309.ipynb
 3. Select additional simulations to run if desired.
+    - See notebooks/reproduce/, in particular commands.ipynb and reproduce_commands.sh
 
 
 ## Directory structure
@@ -117,6 +118,9 @@ our paper. We supply our traces, code, and the intermediate results from our exp
 624 machine-days were used for the final runs to generate the results used in the paper.
 Each simulation of a ML policy takes at least 30 minutes, multiplied by 7 traces and 10 samples each.
 
+## Future research
+
+notebooks/reproduce/exps-cluster-sample.ipynb will be useful to allow you to run experiments efficiently, but with more dependencies required (brooce, redis).
 
 ## Troubleshooting
 
@@ -132,9 +136,7 @@ git pull --recurse-submodules
 
 ```
 cd data
-rm -r breakdown-stats/
-rm results_release.csv.gz
-rm -r tectonic
+bash clean.sh
 bash get-tectonic.sh
 ```
 
