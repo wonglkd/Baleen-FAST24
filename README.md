@@ -2,10 +2,14 @@
 
 _Baleen: ML Admission & Prefetching for Flash Caches_
 
-_[Paper](https://wonglkd.fi-de.net/papers/Baleen-FAST24.pdf) | [Data](https://ftp.pdl.cmu.edu/pub/datasets/Baleen24/) | [Video walkthrough](https://www.tiny.cc/BaleenArtifactYT) | [Reproduce on Chameleon](https://www.chameleoncloud.org/experiment/share/aa6fb454-6452-4fc8-994a-b028bfc3c82d)_
+_[Paper (Preprint)](https://wonglkd.fi-de.net/papers/Baleen-FAST24.pdf) | [Code](https://github.com/wonglkd/BCacheSim/) | [Data](https://ftp.pdl.cmu.edu/pub/datasets/Baleen24/) | [Video walkthrough](https://www.tiny.cc/BaleenArtifactYT) | [Reproduce on Chameleon](https://www.chameleoncloud.org/experiment/share/aa6fb454-6452-4fc8-994a-b028bfc3c82d)_ 
 
 This repository is targeted at those seeking to reproduce the results found in the Baleen paper and contains a frozen copy of the code.
 If you are looking to use Baleen, please go to https://github.com/wonglkd/BCacheSim/ for the latest version.
+
+![Artifact Available](https://sysartifacts.github.io/images/usenix_available.svg)
+![Artifact Functional](https://sysartifacts.github.io/images/usenix_functional.svg)
+![Results Reproduced](https://sysartifacts.github.io/images/usenix_reproduced.svg)
 
 **Scope:** this repository contains Python code to reproduce the **simulator** results in the Baleen paper. The testbed code modified a proprietary internal version of CacheLib and will not be released at this time, pending a rebase on the open-source version of CacheLib. Another key difference is that Meta's exact constants for the disk head time function will not be released, meaning that results will not be exactly the same; instead, we use constants (seek time and bandwidth) measured on the hard disks in our university testbed.
 
@@ -14,6 +18,7 @@ Some terms were renamed after coding for better clarity in the paper. However, t
 
 - Service Time (in the code) was renamed to Disk Head Time (in the paper)
 - Chunks (in the code) are called segments (in the paper)
+
 
 ## Walkthrough Video
 We have verified that our instructions work on Chameleon, and have recorded a video showing the setup of the environment and the reproduction of the instructions below (YouTube: http://tiny.cc/BaleenArtifactYT). This video shows the setup on Chameleon, the running of the instructions below and the running of all notebooks successfully run with no error cells.
@@ -145,9 +150,11 @@ bash clean.sh
 bash get-tectonic.sh
 ```
 
+3. If you need to get an allocation on Chameleon or face any difficulties with the platform itself, please contact their [helpdesk](mailto:help@chameleoncloud.org).
+
 ## Any questions?
 
-Feel free to contact me: https://wonglkd.fi-de.net
+[Please raise a GitHub issue](https://github.com/wonglkd/Baleen-FAST24/issues/new). Support is best effort; you may also email me (contact details at https://wonglkd.fi-de.net).
 
 ## Reference
 
