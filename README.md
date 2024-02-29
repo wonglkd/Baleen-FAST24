@@ -33,7 +33,7 @@ _Time estimate: 60 mins (20 mins interactive)._
 
 _Time estimate: 30 minutes (10 mins interactive)._
 
-The recommended way is to use Chameleon Trovi, an academic cloud. Note that you will require an allocation; if you are affilated with FAST, you can request to be added to the associated project (CHI-231080). To do this (and for any other issues with Chameleon), please contact the helpdesk at help@chameleoncloud.org.
+The recommended way is to use Chameleon Trovi, an academic cloud. Note that you will require an allocation; if you are affiliated with FAST, you can request to be added to the associated project (CHI-231080). To do this (and for any other issues with Chameleon), please contact the helpdesk at help@chameleoncloud.org.
 
 1. Launch [artifact on Trovi](https://www.chameleoncloud.org/experiment/share/aa6fb454-6452-4fc8-994a-b028bfc3c82d)
 2. (Optional) Open notebook `chameleon/1-getting-started.ipynb` which will walk you through the Getting Started section of this README. You may run one cell at a time, or click Run -> Run All Cells to execute all commands. If processes get killed, you need a dedicated server.
@@ -119,7 +119,7 @@ our paper. We supply our traces, code, and the intermediate results from our exp
 - data: traces that are used as input
 - runs: where experiment results are stored
 - tmp: temporary directory for ML models, generated episode files
-- notebooks: Jupyter notebooks for experiemnts
+- notebooks: Jupyter notebooks for experiments
 - notebooks/figs: Output directory for figures
 
 
